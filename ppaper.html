@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="valid.html" style="float: right;">Validater</a>
+        <a href="ppaper.html" style="float: right;">Pencil Paper</a>
+        <a href="brute.html" style="float: right;">Bruteforce</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <p>Invalid Board</p>
+        </div>
+
+    </div>
+    <div class="cont">
+        <div class="sudokucont">
+            <div>
+                <input type="number" id="11" />
+                <input type="number" id="12" />
+                <input type="number" id="13" />
+                <input type="number" id="14" />
+                <input type="number" id="15" />
+                <input type="number" id="16" />
+                <input type="number" id="17" />
+                <input type="number" id="18" />
+                <input type="number" id="19" />
+            </div>
+            <div>
+                <input type="number" id="21" />
+                <input type="number" id="22" />
+                <input type="number" id="23" />
+                <input type="number" id="24" />
+                <input type="number" id="25" />
+                <input type="number" id="26" />
+                <input type="number" id="27" />
+                <input type="number" id="28" />
+                <input type="number" id="29" />
+            </div>
+            <div>
+                <input type="number" id="31" />
+                <input type="number" id="32" />
+                <input type="number" id="33" />
+                <input type="number" id="34" />
+                <input type="number" id="35" />
+                <input type="number" id="36" />
+                <input type="number" id="37" />
+                <input type="number" id="38" />
+                <input type="number" id="39" />
+            </div>
+            <div>
+                <input type="number" id="41" />
+                <input type="number" id="42" />
+                <input type="number" id="43" />
+                <input type="number" id="44" />
+                <input type="number" id="45" />
+                <input type="number" id="46" />
+                <input type="number" id="47" />
+                <input type="number" id="48" />
+                <input type="number" id="49" />
+            </div>
+            <div>
+                <input type="number" id="51" />
+                <input type="number" id="52" />
+                <input type="number" id="53" />
+                <input type="number" id="54" />
+                <input type="number" id="55" />
+                <input type="number" id="56" />
+                <input type="number" id="57" />
+                <input type="number" id="58" />
+                <input type="number" id="59" />
+            </div>
+            <div>
+                <input type="number" id="61" />
+                <input type="number" id="62" />
+                <input type="number" id="63" />
+                <input type="number" id="64" />
+                <input type="number" id="65" />
+                <input type="number" id="66" />
+                <input type="number" id="67" />
+                <input type="number" id="68" />
+                <input type="number" id="69" />
+            </div>
+            <div>
+                <input type="number" id="71" />
+                <input type="number" id="72" />
+                <input type="number" id="73" />
+                <input type="number" id="74" />
+                <input type="number" id="75" />
+                <input type="number" id="76" />
+                <input type="number" id="77" />
+                <input type="number" id="78" />
+                <input type="number" id="79" />
+            </div>
+            <div>
+                <input type="number" id="81" />
+                <input type="number" id="82" />
+                <input type="number" id="83" />
+                <input type="number" id="84" />
+                <input type="number" id="85" />
+                <input type="number" id="86" />
+                <input type="number" id="87" />
+                <input type="number" id="88" />
+                <input type="number" id="89" />
+            </div>
+            <div>
+                <input type="number" id="91" />
+                <input type="number" id="92" />
+                <input type="number" id="93" />
+                <input type="number" id="94" />
+                <input type="number" id="95" />
+                <input type="number" id="96" />
+                <input type="number" id="97" />
+                <input type="number" id="98" />
+                <input type="text" id="99" />
+            </div>
+        </div>
+        <div class="btncont">
+            <button onclick="loadval()">Load</button>
+            <button onclick="getelepp()">Solve</button>
+            <button onclick="aclear()">Clear</button>
+            <!-- <button id="ac" onclick="aclear()">clear</button> -->
+        </div>
+    </div>
+
+
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+            <div class="wave waveTop"
+                style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')">
+            </div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle"
+                style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')">
+            </div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom"
+                style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
